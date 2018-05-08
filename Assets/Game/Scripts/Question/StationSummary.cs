@@ -20,7 +20,7 @@ public class StationSummary : MonoBehaviour {
 	[SerializeField] private GameObject bg;
 	[SerializeField] private EndGameResult endGameResult;
 
-	[SerializeField] private float speed = 2;
+	[SerializeField] private float speed = 10;
 
 	[SerializeField] private Button nextBtn;
 
