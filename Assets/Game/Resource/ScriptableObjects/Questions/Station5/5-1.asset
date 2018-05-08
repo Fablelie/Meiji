@@ -24,4 +24,6 @@ MonoBehaviour:
     dummys:
     - Leakage
     - Weight
+  thaiFontSize: 89
+  engFontSize: 63
   score: 0

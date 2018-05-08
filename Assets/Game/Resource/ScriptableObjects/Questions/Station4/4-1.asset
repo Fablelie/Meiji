@@ -25,4 +25,6 @@ MonoBehaviour:
     dummys:
     - LB18
     - LB11
+  thaiFontSize: 100
+  engFontSize: 100
   score: 0

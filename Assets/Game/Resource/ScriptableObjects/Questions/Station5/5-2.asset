@@ -25,4 +25,6 @@ MonoBehaviour:
     dummys:
     - Anti septic
     - Anti body
+  thaiFontSize: 100
+  engFontSize: 100
   score: 0

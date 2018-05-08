@@ -24,4 +24,6 @@ MonoBehaviour:
     dummys:
     - SHOWER AIR ROOM
     - AIR SHOWERS ROOM
+  thaiFontSize: 80
+  engFontSize: 80
   score: 0

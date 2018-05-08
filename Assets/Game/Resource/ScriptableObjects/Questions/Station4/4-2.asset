@@ -24,4 +24,6 @@ MonoBehaviour:
     dummys:
     - Japan
     - United States of America
+  thaiFontSize: 100
+  engFontSize: 74
   score: 0

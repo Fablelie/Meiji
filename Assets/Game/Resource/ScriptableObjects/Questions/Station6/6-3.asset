@@ -26,4 +26,6 @@ MonoBehaviour:
     dummys:
     - 100 million bottles
     - 10 trillions
+  thaiFontSize: 100
+  engFontSize: 95
   score: 0

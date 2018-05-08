@@ -27,4 +27,6 @@ MonoBehaviour:
     dummys:
     - 4 person
     - As much as we can fit.
+  thaiFontSize: 77
+  engFontSize: 80
   score: 0

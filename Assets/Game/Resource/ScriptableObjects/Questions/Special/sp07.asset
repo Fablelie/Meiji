@@ -24,4 +24,6 @@ MonoBehaviour:
     answer: Yes
     dummys:
     - No
-  score: 80
+  thaiFontSize: 100
+  engFontSize: 100
+  score: 0

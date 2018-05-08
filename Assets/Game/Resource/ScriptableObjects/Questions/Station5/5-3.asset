@@ -25,4 +25,6 @@ MonoBehaviour:
     dummys:
     - Unscreamable
     - Unscapable
+  thaiFontSize: 100
+  engFontSize: 100
   score: 0

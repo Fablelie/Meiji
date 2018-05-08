@@ -26,4 +26,6 @@ MonoBehaviour:
     dummys:
     - Resazuin
     - Resazulin
-  score: 120
+  thaiFontSize: 100
+  engFontSize: 100
+  score: 0

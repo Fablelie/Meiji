@@ -27,4 +27,6 @@ MonoBehaviour:
     dummys:
     - 300 Kg. or equal to 4 person
     - 500 Kg. or equal to 5 person
+  thaiFontSize: 63
+  engFontSize: 65
   score: 0

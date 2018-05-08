@@ -24,4 +24,6 @@ MonoBehaviour:
     dummys:
     - Ratchaburi
     - Suphan Buri
+  thaiFontSize: 100
+  engFontSize: 100
   score: 0

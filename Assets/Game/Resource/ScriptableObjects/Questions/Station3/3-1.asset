@@ -29,4 +29,6 @@ MonoBehaviour:
     dummys:
     - Coffee Fresh Strawberry Chocolate
     - Coffee Fresh Chocolate Strawberry
+  thaiFontSize: 63
+  engFontSize: 63
   score: 0

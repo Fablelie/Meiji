@@ -26,4 +26,6 @@ MonoBehaviour:
     dummys:
     - FOUHS
     - FUSHU
+  thaiFontSize: 100
+  engFontSize: 100
   score: 0

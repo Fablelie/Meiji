@@ -11,7 +11,7 @@ public class Question : ScriptableObject {
 	public int thaiFontSize;
     public int engFontSize;
 
-	[HideInInspector] public int score;
+	public int score;
 }
 
 [System.Serializable]

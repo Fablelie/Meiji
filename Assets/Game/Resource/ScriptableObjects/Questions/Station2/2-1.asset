@@ -26,4 +26,6 @@ MonoBehaviour:
     dummys:
     - 'To prevent dust and other particles during the production process. '
     - To adhere to the proper attire protocol.
-  score: 60
+  thaiFontSize: 63
+  engFontSize: 54
+  score: 0

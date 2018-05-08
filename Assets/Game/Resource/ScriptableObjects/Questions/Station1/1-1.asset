@@ -24,4 +24,6 @@ MonoBehaviour:
     dummys:
     - Oldstein Friesian
     - Holstein Friesiam
-  score: 120
+  thaiFontSize: 100
+  engFontSize: 100
+  score: 0

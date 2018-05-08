@@ -26,4 +26,6 @@ MonoBehaviour:
     dummys:
     - "1 \u2013 3 Celsius Degree"
     - "7 \u2013 10 Celsius Degree"
+  thaiFontSize: 92
+  engFontSize: 83
   score: 0

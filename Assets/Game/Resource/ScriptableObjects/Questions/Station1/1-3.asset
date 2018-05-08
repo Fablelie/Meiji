@@ -25,4 +25,6 @@ MonoBehaviour:
     dummys:
     - Not more than -4 Celsius Degree.
     - Not more than 14 Celsius Degree.
+  thaiFontSize: 78
+  engFontSize: 63
   score: 0
