@@ -60,8 +60,9 @@ public class GameManager : MonoBehaviour {
 		for(int i = 0; i < stationArr.Length; i++)
 		{
             currentStationIndex = i;
-			stationArr[i].ObserveEveryValueChanged(x => x.score.Value).Subscribe(score => UpdateStationScore(currentStationIndex, score));
+			stationArr[i].ObserveEveryValueChanged(x => x.score.Value).Subscribe(score => UpdateStationScore());
 		}
+		specialStation.ObserveEveryValueChanged(x => x.score.Value).Subscribe(score => Server.Instance.UpdateSpecialScore(score));
         ResetGameStation();
 	}
 
@@ -71,9 +72,12 @@ public class GameManager : MonoBehaviour {
 		scoreText.text = "Score : " + score.ToString();
 	}
 
-	public void UpdateStationScore(int stationIndex, int score)
+	public void UpdateStationScore()
 	{
-		Server.Instance.UpdateStationScore(stationIndex, score);
+        for (int i = 0; i < stationArr.Length; i++)
+		{
+			Server.Instance.UpdateStationScore(i, stationArr[i].score.Value);
+		}
 	}
 
 	private void ResetGameStation()
@@ -177,6 +181,7 @@ public class GameManager : MonoBehaviour {
 				{
 					q.score = question.score;
 					specialStation.score.Value += q.score;
+                    globalScore.Value += q.score;
 					return;
 				}
 

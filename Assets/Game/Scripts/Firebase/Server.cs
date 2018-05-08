@@ -223,6 +223,11 @@ public class Server : MonoBehaviour {
         reference.Child(deviceID).Child("station").Child(stationIndex.ToString()).SetValueAsync(score);
     }
 
+    public void UpdateSpecialScore(int score)
+    {
+        reference.Child(deviceID).Child("specialScore").SetValueAsync(score);
+    }
+
     public string GetGroupName()
     {
         try
