@@ -8,6 +8,9 @@ public class Question : ScriptableObject {
 	public QuestionDetail questionThai;
 	public QuestionDetail questionEnglish;
 
+	public int thaiFontSize;
+    public int engFontSize;
+
 	[HideInInspector] public int score;
 }
 

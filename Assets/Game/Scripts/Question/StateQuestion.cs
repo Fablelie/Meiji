@@ -56,9 +56,19 @@ public class StateQuestion : MonoBehaviour {
 		foreach (Answer item in arr)
 		{
             print("Setup new Answer");
-            baseFit = item.displayAnswer.resizeTextForBestFit = true;
-			item.displayAnswer.resizeTextMaxSize = 100;
-			item.displayAnswer.resizeTextMinSize = 50;
+			int answerFontSize = (GameManager.Instance.language == GameEnum.Language.thai)? questionDetail.thaiFontSize: questionDetail.engFontSize;
+            
+			if(answerFontSize > 0)
+			{
+                baseFit = item.displayAnswer.resizeTextForBestFit = false;
+				item.displayAnswer.fontSize = answerFontSize;
+			}
+			else
+			{
+                baseFit = item.displayAnswer.resizeTextForBestFit = true;
+                item.displayAnswer.resizeTextMaxSize = 100;
+                item.displayAnswer.resizeTextMinSize = 50;	
+			}
 
 			item.SetTextAnswer(GetAnswerByIndex(i, isSpecial));
 			item.GetButton().onClick.AddListener(() => SendAnswer(item)); 
@@ -92,7 +102,7 @@ public class StateQuestion : MonoBehaviour {
 		.Subscribe();
 	}
 
-	bool baseFit = true;
+	bool baseFit = false;
     int fontSize = int.MaxValue;
 	void Update()
 	{
@@ -101,15 +111,21 @@ public class StateQuestion : MonoBehaviour {
 			foreach (Answer item in arr)
 			{
                 baseFit = item.displayAnswer.resizeTextForBestFit;
-				int fontSizeBaseFit = item.displayAnswer.cachedTextGenerator.fontSizeUsedForBestFit;
+                item.displayAnswer.resizeTextMinSize = 50;
+				item.displayAnswer.resizeTextMaxSize = 100;
+                int fontSizeBaseFit = item.displayAnswer.cachedTextGenerator.fontSizeUsedForBestFit;
 				print(item.name + " : " + fontSizeBaseFit);
 				if(fontSizeBaseFit > 0 && item.displayAnswer.resizeTextForBestFit)
 				{
 					fontSize = (fontSizeBaseFit < fontSize) ? fontSizeBaseFit : fontSize;
 					item.displayAnswer.resizeTextForBestFit = false;
 				}
-                item.displayAnswer.fontSize = fontSize;
-
+                item.displayAnswer.fontSize = (fontSize > 100) ? 100 : fontSize;
+				
+				if(GameManager.Instance.language == GameEnum.Language.thai)
+					questionDetail.thaiFontSize = (fontSize > 100) ? 100 : fontSize;
+				else
+                    questionDetail.engFontSize = (fontSize > 100) ? 100 : fontSize;
 				
 			}
 		}

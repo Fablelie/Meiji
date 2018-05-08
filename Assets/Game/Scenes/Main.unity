@@ -10414,7 +10414,7 @@ MonoBehaviour:
   scanerPanel: {fileID: 1644009281}
   bg: {fileID: 1624438083}
   endGameResult: {fileID: 247935981}
-  speed: 50
+  speed: 100
   nextBtn: {fileID: 1257896541}
 --- !u!1 &1794403704
 GameObject:
