@@ -22,18 +22,19 @@ public class DisplayGroupName : MonoBehaviour {
 	private string GetLocalizeName(string name)
 	{
 		bool isThai = (GameManager.Instance.language == GameEnum.Language.thai);
-		switch (name)
-		{
-            case "DD":
-                return (isThai) ? "ทีม : พี่ดีดี" : "Team : P'DD";
-			case "BOW":
-                return (isThai) ? "ทีม : พี่โบว์" : "Team : P'Bow";
-			case "POLY":
-                return (isThai) ? "ทีม : พี่พลอย" : "Team : P'Poly";
-			case "EARTH":
-                return (isThai) ? "ทีม : พี่เอิร์ธ" : "Team : P'Earth";
-            default:
-				return name;
-		}
+		return ((isThai) ? "ทีม : " : "Team : ") + name;
+		// switch (name)
+		// {
+        //     case "DD":
+        //         return (isThai) ? "ทีม : พี่ดีดี" : "Team : P'DD";
+		// 	case "BOW":
+        //         return (isThai) ? "ทีม : พี่โบว์" : "Team : P'Bow";
+		// 	case "POLY":
+        //         return (isThai) ? "ทีม : พี่พลอย" : "Team : P'Poly";
+		// 	case "EARTH":
+        //         return (isThai) ? "ทีม : พี่เอิร์ธ" : "Team : P'Earth";
+        //     default:
+		// 		return name;
+		// }
 	}
 }

@@ -232,7 +232,7 @@ public class Server : MonoBehaviour {
         catch (System.Exception)
         {
             WriteNewUser("NewUser");
-            return "New User Restart game for genarate user.";
+            return "New User";
         }
         
     }
