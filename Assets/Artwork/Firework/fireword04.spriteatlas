@@ -1,0 +1,153 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: fireword04
+  m_EditorData:
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingParameters:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 888d3ab52c3949a4082d6c3836e27e10, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 25c6d45a0741c2348a580ce0010304e5, type: 3}
+  - {fileID: 21300000, guid: 7a9d681b0a07db14698861d7fdf2cf94, type: 3}
+  - {fileID: 21300000, guid: 0717635b98c3a7a42b09814bda07a87d, type: 3}
+  - {fileID: 21300000, guid: fd2ab76725a5cf74d899d4faaa3c78f5, type: 3}
+  - {fileID: 21300000, guid: 5f8af8ac6972d6e49b8792e35de54c76, type: 3}
+  - {fileID: 21300000, guid: 0b4d7d7c626762f49a9141742e7807b5, type: 3}
+  - {fileID: 21300000, guid: 70a2ad6aab6ceac4ebf1531338219207, type: 3}
+  - {fileID: 21300000, guid: df332c1e3bfb5604caa6b2810c7b7ba7, type: 3}
+  - {fileID: 21300000, guid: 7df12c98320159b4ca84fd30f6cbdd94, type: 3}
+  - {fileID: 21300000, guid: 70826e259dc4ad6479f0862fd08c9b37, type: 3}
+  - {fileID: 21300000, guid: e5dc2b5473804bd4bb9544407f4f7f6f, type: 3}
+  - {fileID: 21300000, guid: b971c96aaf9ceab4ab0cd5ecf8378fb9, type: 3}
+  - {fileID: 21300000, guid: 8572b58f64c206f469222e9c486fec0e, type: 3}
+  - {fileID: 21300000, guid: 5ac69d7bddca3f64197b238eacf58e53, type: 3}
+  - {fileID: 21300000, guid: db37c3759ef58464ea5936826dfa7c8b, type: 3}
+  - {fileID: 21300000, guid: 275306fd7a4400e4fb2d70fdc3102097, type: 3}
+  - {fileID: 21300000, guid: e264509cc4b2539418ab66b2e9b683d1, type: 3}
+  - {fileID: 21300000, guid: d9697c5976a06e9428acbf92e563a329, type: 3}
+  - {fileID: 21300000, guid: 88c59316502153442ba657d1c7b01752, type: 3}
+  - {fileID: 21300000, guid: 7f1f10c59047cd94f850aa42a341f01c, type: 3}
+  - {fileID: 21300000, guid: e1af6298bf5b4264197c61a6d30aa7f2, type: 3}
+  - {fileID: 21300000, guid: 318afb54a29de62458d7118a1c70b921, type: 3}
+  - {fileID: 21300000, guid: c4766772cb06f3344885bbfa441f2b5d, type: 3}
+  - {fileID: 21300000, guid: c64fdf2546341ee4aad0019d7a8c9f78, type: 3}
+  - {fileID: 21300000, guid: c7b980bda3b9779428c044751454fab1, type: 3}
+  - {fileID: 21300000, guid: 9a9ad7675132c4244ab26f385fb7df8f, type: 3}
+  - {fileID: 21300000, guid: a8965e36c48cfc9419cb3ce8b286501d, type: 3}
+  - {fileID: 21300000, guid: dbe2a7d43d74f2d4c8963fe737a4e72c, type: 3}
+  - {fileID: 21300000, guid: 3361a97d77644b840af5edabf42c4a20, type: 3}
+  - {fileID: 21300000, guid: d2ad77ef46141da45bec8329d6f95f71, type: 3}
+  - {fileID: 21300000, guid: aa71b938bd335994faef09b19da99a70, type: 3}
+  - {fileID: 21300000, guid: 981fc5c2d52dc2843b2427ae4b916b74, type: 3}
+  - {fileID: 21300000, guid: e9ad93c9b337a8f4689d705ad1ed82be, type: 3}
+  - {fileID: 21300000, guid: 3e10f603cd56512499c83200c4e6a931, type: 3}
+  - {fileID: 21300000, guid: 0e412f0a06750d44bb3d202406dae28a, type: 3}
+  - {fileID: 21300000, guid: cd128f07e9ec2dd4ab5bc695daa34252, type: 3}
+  - {fileID: 21300000, guid: b26191b8d51486b418b13d629fb58640, type: 3}
+  - {fileID: 21300000, guid: dbf69207ee7d8d846a44775cdba8521f, type: 3}
+  - {fileID: 21300000, guid: edd2a091510dee6478f7591a4456883b, type: 3}
+  - {fileID: 21300000, guid: 4670a47108e27e645bbe435d894ba76c, type: 3}
+  - {fileID: 21300000, guid: 810a3a49567fd5e48994ac90a59995fe, type: 3}
+  - {fileID: 21300000, guid: b16307e2586851c4e9c8b0dffe9e4288, type: 3}
+  - {fileID: 21300000, guid: 1a5d7f940dee1664b8aad4d715c0e8e6, type: 3}
+  - {fileID: 21300000, guid: 068df6cfc05edba4cbe4ab9fc9954337, type: 3}
+  - {fileID: 21300000, guid: 662f08de0d969da42a109aa5d15d4e00, type: 3}
+  - {fileID: 21300000, guid: 3e148e9a9c2c3f34590c3f54d2d1fc00, type: 3}
+  - {fileID: 21300000, guid: 8f0bf13739c657f4899c83a72e2b2371, type: 3}
+  - {fileID: 21300000, guid: 48eb5869a8cad964dbccc1686cecab75, type: 3}
+  - {fileID: 21300000, guid: a30615796a4bcbc4b9a9d646f62702a8, type: 3}
+  - {fileID: 21300000, guid: 44611cde5fee5104992a01cbfe8d4d5c, type: 3}
+  - {fileID: 21300000, guid: 0985013d9c347174ba1c804d200eb91d, type: 3}
+  - {fileID: 21300000, guid: e2595c8f64342944a857a183a5e6b1c1, type: 3}
+  - {fileID: 21300000, guid: a5750f8ffcf1e72469c46397392ae642, type: 3}
+  - {fileID: 21300000, guid: 3b148db5a6a918e47a33ef4e39618ffd, type: 3}
+  - {fileID: 21300000, guid: c10b73c3c95023f4293f83f41bf7dbba, type: 3}
+  - {fileID: 21300000, guid: 164fd70532757584790db073f95b2012, type: 3}
+  - {fileID: 21300000, guid: 7d3d54c6b2bcff043bc26fbfa3d9d435, type: 3}
+  - {fileID: 21300000, guid: 7ead71fcf31d75e4d9ba9650ca2bd311, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Firework_04_00053
+  - Firework_04_00052
+  - Firework_04_00011
+  - Firework_04_00010
+  - Firework_04_00013
+  - Firework_04_00012
+  - Firework_04_00015
+  - Firework_04_00014
+  - Firework_04_00017
+  - Firework_04_00016
+  - Firework_04_00019
+  - Firework_04_00018
+  - Firework_04_00008
+  - Firework_04_00009
+  - Firework_04_00006
+  - Firework_04_00007
+  - Firework_04_00004
+  - Firework_04_00005
+  - Firework_04_00002
+  - Firework_04_00003
+  - Firework_04_00001
+  - Firework_04_00028
+  - Firework_04_00029
+  - Firework_04_00048
+  - Firework_04_00039
+  - Firework_04_00049
+  - Firework_04_00038
+  - Firework_04_00020
+  - Firework_04_00021
+  - Firework_04_00022
+  - Firework_04_00042
+  - Firework_04_00058
+  - Firework_04_00023
+  - Firework_04_00033
+  - Firework_04_00043
+  - Firework_04_00024
+  - Firework_04_00032
+  - Firework_04_00040
+  - Firework_04_00025
+  - Firework_04_00031
+  - Firework_04_00041
+  - Firework_04_00055
+  - Firework_04_00026
+  - Firework_04_00030
+  - Firework_04_00046
+  - Firework_04_00054
+  - Firework_04_00027
+  - Firework_04_00037
+  - Firework_04_00047
+  - Firework_04_00057
+  - Firework_04_00036
+  - Firework_04_00044
+  - Firework_04_00056
+  - Firework_04_00035
+  - Firework_04_00045
+  - Firework_04_00051
+  - Firework_04_00034
+  - Firework_04_00050
+  m_Tag: fireword04
+  m_IsVariant: 0

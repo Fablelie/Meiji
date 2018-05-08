@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "224162158779",
+    "firebase_url": "https://meiji-questions-game.firebaseio.com",
+    "project_id": "meiji-questions-game",
+    "storage_bucket": "meiji-questions-game.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224162158779:android:f93d623f684b5f3d",
+        "android_client_info": {
+          "package_name": "com.MeijiQuestion.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224162158779-faeqbcv6mv0aqmgg3sa00b2c8mn4rrg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPs8Z2koH2IOjyjOzjeQOUG7G0PfVEKg0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

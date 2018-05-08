@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fbdc8951f4952d4f96e8b9c8ab03490, type: 3}
+  m_Name: Station4
+  m_EditorClassIdentifier: 
+  stationName: Station 4
+  stationTitle:
+  - "Yoghurt \u0E08\u0E32\u0E01\u0E19\u0E21\u0E04\u0E38\u0E13\u0E20\u0E32\u0E1E\u0E2A\u0E39\u0E48\u0E42\u0E22\u0E40\u0E01\u0E34\u0E23\u0E4C\u0E15\u0E41\u0E17\u0E49"
+  - Yogurt
+  stationIndex: 3
+  isSpecialStation: 0
+  questions:
+  - {fileID: 11400000, guid: 10fb1593f5c7fff4ebdd467ffcb719ea, type: 2}
+  - {fileID: 11400000, guid: 115e922394852de4491842d3da87efa4, type: 2}
+  - {fileID: 11400000, guid: f17474d072f8f3e4db91ff4999b2a66d, type: 2}
+  isClear: 1

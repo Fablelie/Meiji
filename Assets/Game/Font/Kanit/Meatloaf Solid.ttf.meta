@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 95541b6d9da43924b97f8dfbc63a0496
+timeCreated: 1519143584
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: meatloaf solid
+  fontNames:
+  - meatloaf solid
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7e102e24089e6cb418968ebc53040a5d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
