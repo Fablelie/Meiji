@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Firework
+  m_Name: Firework_01
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -40,7 +40,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 144042bb4a4e7d948b3829a1136fe563, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6102162a3ac4b1345bc09df5f93c9ee7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
