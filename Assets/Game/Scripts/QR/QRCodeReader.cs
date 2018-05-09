@@ -38,17 +38,28 @@ public class QRCodeReader : MonoBehaviour {
 
 	IEnumerator Decoder()
 	{
-		yield return endFrame;
-		Result result = barcodeReader.Decode(camTexture.GetPixels32(), camTexture.width, camTexture.height);
-        if (result != null) {
-			WebCamStop();
-			gameObject.SetActive(false);
-			backBtn.gameObject.SetActive(false);
-			GameManager.Instance.SetGameStation(result.Text);
-            // print(result.Text);
+		// yield return endFrame;
+		WaitForSeconds wait = new WaitForSeconds(0.5f);
+		Result result = null;//barcodeReader.Decode(camTexture.GetPixels32(), camTexture.width, camTexture.height);
+		while (result == null)
+		{
+			// Debug.Log("Decoder");
+            yield return wait;
+            result = barcodeReader.Decode(camTexture.GetPixels32(), camTexture.width, camTexture.height);
 		}
-		else
-			StartCoroutine(Decoder());
+        WebCamStop();
+        gameObject.SetActive(false);
+        backBtn.gameObject.SetActive(false);
+        GameManager.Instance.SetGameStation(result.Text);
+        // if (result != null) {
+		// 	WebCamStop();
+		// 	gameObject.SetActive(false);
+		// 	backBtn.gameObject.SetActive(false);
+		// 	GameManager.Instance.SetGameStation(result.Text);
+        //     // print(result.Text);
+		// }
+		// else
+		// 	StartCoroutine(Decoder());
 	}
 
 }
