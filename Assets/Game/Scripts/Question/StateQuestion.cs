@@ -25,6 +25,8 @@ public class StateQuestion : MonoBehaviour {
 
 	[SerializeField] private GameObject answerSheet;
 
+	[SerializeField] private GameObject bombEffect;
+
 	private Question questionDetail;
 	public bool readyForStartQuestion = true;
 	private AudioSource timerAudioSource;
@@ -35,6 +37,7 @@ public class StateQuestion : MonoBehaviour {
 
     public void SetUp(Question question, string stationName, string stationTitle, int numberOfQuestion, int amountOfQuestions, bool isSpecial)
 	{
+        bombEffect.SetActive(false);
 		this.isSpecial = isSpecial;
 		readyForStartQuestion = false;
 		this.stationName = stationName;
@@ -55,7 +58,7 @@ public class StateQuestion : MonoBehaviour {
 		fontSize = int.MaxValue;
 		foreach (Answer item in arr)
 		{
-            print("Setup new Answer");
+            // print("Setup new Answer");
 			int answerFontSize = (GameManager.Instance.language == GameEnum.Language.thai)? questionDetail.thaiFontSize: questionDetail.engFontSize;
             
 			if(answerFontSize > 0)
@@ -95,6 +98,7 @@ public class StateQuestion : MonoBehaviour {
 		.Where(isTimeOut => isTimeOut)
 		.Do(_ => {
 			Debug.LogError("TimeOut");
+            bombEffect.SetActive(true);
 			AnswerStateChange(GameEnum.StateAnswer.timeout);
 			// ani.enabled = false;
 			

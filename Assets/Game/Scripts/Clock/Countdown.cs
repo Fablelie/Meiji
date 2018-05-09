@@ -27,6 +27,8 @@ public class Countdown : MonoBehaviour {
 	[SerializeField] private Color textBlack;
 	[SerializeField] private Color textRed;
 
+	[SerializeField] private Animator animator;
+
     public void CountdownStart (string header = "", int time = 0)
 	{
 		isTimeOut.Value = false;
@@ -55,14 +57,21 @@ public class Countdown : MonoBehaviour {
     {
         var w = new WaitForEndOfFrame();
         float max = currentTime;
+		bool isPlayVibrate = false;
         while (currentTime > 0)
         {
             currentTime -= Time.deltaTime;
             textHeader.text = currentTime.ToString("0");
             // print(((currentTime / max) * 100) * 0.01f);
-            countdownImageDisplay.fillAmount = (((max - currentTime) / max) * 100) * 0.01f;
+            countdownImageDisplay.fillAmount = ((((max - currentTime) / max) * 100) * 0.01f);
             yield return w;
+			if(currentTime <= 2.5f && !isPlayVibrate)
+			{
+                isPlayVibrate = true;
+				animator.Play("TimerVibrate");
+			}
         }
+		animator.Play("idle");
         isTimeOut.Value = true;
     }
 
@@ -93,6 +102,7 @@ public class Countdown : MonoBehaviour {
 
 	public void Stop()
 	{
+        animator.Play("idle");
 		StopCoroutine("GuageCount");
 	}
 

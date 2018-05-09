@@ -25,7 +25,7 @@ public class Answer : MonoBehaviour {
         DisplayStateIcon(GameEnum.StateAnswer.timeout);
 		this.answer = answer;
 		displayAnswer.text = index + ". " + answer;
-		print(displayAnswer.cachedTextGenerator.fontSizeUsedForBestFit);
+		// print(displayAnswer.cachedTextGenerator.fontSizeUsedForBestFit);
 	}
 
 	public void DisplayStateIcon(GameEnum.StateAnswer state)
