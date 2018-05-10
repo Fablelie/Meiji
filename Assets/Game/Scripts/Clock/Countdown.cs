@@ -63,7 +63,7 @@ public class Countdown : MonoBehaviour {
             currentTime -= Time.deltaTime;
             textHeader.text = currentTime.ToString("0");
             // print(((currentTime / max) * 100) * 0.01f);
-            countdownImageDisplay.fillAmount = ((((max - currentTime) / max) * 100) * 0.01f);
+            countdownImageDisplay.fillAmount = (((((max) - currentTime) / (max)) * 83) * 0.01f)+0.17f;
             yield return w;
 			if(currentTime <= 2.5f && !isPlayVibrate)
 			{
