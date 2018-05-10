@@ -49,6 +49,11 @@ public class GameManager : MonoBehaviour {
 		SetEnableVuforia(false);
 	}
 
+	void Start()
+	{
+        ResetGameStation();
+	}
+
 	public void CheckLoadingPanel()
 	{
 		if(loadingPanel.activeInHierarchy) loadingPanel.SetActive(false);
