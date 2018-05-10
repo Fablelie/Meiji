@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour {
 
 	void Start()
 	{
-        ResetGameStation();
+        ResetGameStation(true);
 	}
 
 	public void CheckLoadingPanel()
@@ -85,27 +85,40 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	private void ResetGameStation()
+	private void ResetGameStation(bool b = false)
 	{
 		specialStation.score.Value = 0;
-        specialStation.isClear = false;
+        specialStation.isClear = b;
 		foreach (Station station in stationArr)
         {
             station.score.Value = 0;
-			station.isClear = false;
+			station.isClear = b;
         }
+	}
+
+	private bool CheckAllStationIsClear()
+	{
+		foreach (Station station in stationArr)
+		{
+			if(!station.isClear && !specialStation.isClear) return false;
+		}
+		return true;
 	}
 
 	public void SetGameStation(string stationCode)
 	{
-		if(stationCode == "Station 1") StartGame();
+		if(stationCode == "Station 1" && CheckAllStationIsClear()) StartGame();
 
 		if(specialStation.stationName == stationCode)
 		{
 			foreach (Station station in stationArr) if(!station.isClear) return;
-			print("Special Station!!");
-            ChangePanelToGameState(specialStation);
-			return;
+			if (!specialStation.isClear)
+			{
+				print("Special Station!!");
+				ChangePanelToGameState(specialStation);
+				return;
+			}
+			else return;
 		}
 
 		foreach (Station station in stationArr)
@@ -209,15 +222,15 @@ public class GameManager : MonoBehaviour {
         // print(">>>>>>>>>>>>>>>>>>>>>>>> " + Extension.specialQuestion);
 	}
 
-	public void SetGroupName(Text t)
-	{
-		if(string.IsNullOrEmpty(t.text))
-			t.text = "ชื่อกลุ่ม";
+	// public void SetGroupName(Text t)
+	// {
+	// 	if(string.IsNullOrEmpty(t.text))
+	// 		t.text = "ชื่อกลุ่ม";
 
-		groupName = t.text;
-		ResetGameStation();
-		Server.Instance.WriteNewUser(groupName);
-	}
+	// 	groupName = t.text;
+	// 	ResetGameStation();
+	// 	Server.Instance.WriteNewUser(groupName);
+	// }
 
     public void BeginDrawSplashScreen()
 	{
