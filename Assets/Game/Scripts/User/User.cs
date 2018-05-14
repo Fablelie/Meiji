@@ -12,6 +12,8 @@ public class User : IComparable<User>
     public List<int> station;
     public int specialScore;
 
+    public int mascotId = 1;
+
     public User(string groupName, int score, int kinectScore) 
     { 
         this.groupName = groupName;
