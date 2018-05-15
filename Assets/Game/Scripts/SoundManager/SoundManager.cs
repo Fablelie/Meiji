@@ -7,6 +7,9 @@ public class SoundManager : InstanceObject<SoundManager> {
 	[SerializeField] private List<SoundData> bgmSoundsData;
 	[SerializeField] private List<SoundData> soundsData;
 
+	public List<AudioSource> BGMOnPlay;
+	public List<AudioSource> BGMOnPause;
+
 	void Awake()
 	{
 		base.Awake();
@@ -25,6 +28,29 @@ public class SoundManager : InstanceObject<SoundManager> {
 			audio.volume = volume;
 			audio.Play();
 			audio.loop = true;
+			BGMOnPlay.Add(audio);
+		}
+	}
+
+	public void PauseALLBGM()
+	{
+		for(int i = 0;i < BGMOnPlay.Count; i++)
+		{
+			// Debug.LogError("pause : " +BGMOnPlay[i].name);
+			BGMOnPlay[i].Pause();
+			BGMOnPause.Add(BGMOnPlay[i]);
+			BGMOnPlay.Remove(BGMOnPlay[i]);
+		}
+	}
+
+	public void UnPauseAllBGM()
+	{
+		for(int i = 0;i < BGMOnPause.Count; i++)
+		{
+			// Debug.LogError("unpause : "+BGMOnPause[i].name);
+			BGMOnPause[i].UnPause();
+			BGMOnPlay.Add(BGMOnPause[i]);
+			BGMOnPause.Remove(BGMOnPause[i]);
 		}
 	}
 

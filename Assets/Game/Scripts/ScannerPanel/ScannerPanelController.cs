@@ -27,6 +27,14 @@ public class ScannerPanelController : MonoBehaviour {
             Instance = this;
     }
 
+    private void OnEnable() {
+        SoundManager.Instance.PauseALLBGM();
+    }
+
+    private void OnDisable() {
+        SoundManager.Instance.UnPauseAllBGM();
+    }
+
 	public void SetEnableScanner(bool isEnable)
 	{
         GameManager.Instance.SetEnableVuforia(isEnable);
