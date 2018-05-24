@@ -16,7 +16,7 @@ public class DisplayGroupName : MonoBehaviour {
 	{
 		yield return new WaitUntil(() => Server.Instance != null);
 		
-        groupName.text = GetLocalizeName(Server.Instance.GetGroupName());
+        groupName.text = Server.Instance.GetGroupName();//GetLocalizeName(Server.Instance.GetGroupName());
 	}
 
 	private string GetLocalizeName(string name)

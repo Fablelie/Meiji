@@ -241,13 +241,13 @@ public class GameManager : MonoBehaviour {
     {
         SplashScreen.Begin();
         firstPanel.SetActive(true);
+		loadingPanel.SetActive(true);
         while (!SplashScreen.isFinished)
         {
             SplashScreen.Draw();
             yield return null;
         }
-
-
+        loadingPanel.SetActive(false);
     }
 
     public void SetEnableVuforia(bool isEnable)

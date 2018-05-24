@@ -9,10 +9,15 @@ public class GetStringLocalize : MonoBehaviour {
 	public LocalizeKey localizeKey;
 
 
-	void Start()
+	void Awake()
 	{
         target = GetComponent<Text>();
-		target.text = GetLocalizeString(localizeKey);
+		
+	}
+
+	void OnEnable()
+	{
+        target.text = GetLocalizeString(localizeKey);
 	}
 
 	private string GetLocalizeString(LocalizeKey e)
